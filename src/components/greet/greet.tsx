@@ -1,7 +1,7 @@
-import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal } from "react";
+import {GreetProps} from './greet.types'
 
-export default function greet(props: { name: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | null | undefined; }) {
+export default function greet(props: GreetProps) {
   return (
-    <div>Hello {props.name}</div>
+    <div>Hello {props.name? props.name: "Guest"}</div>
   )
 }
