@@ -7,7 +7,7 @@ describe("Greet", () => {
     const textElement = screen.getByText(/hello/i);
     expect(textElement).toBeInTheDocument();
   });
-   describe("Nested describe", () => {
+  describe("Nested describe", () => {
     test("Greet renders a name", () => {
       render(<Greet name="Ebin" />);
       const textElement = screen.getByText("Hello Ebin");
